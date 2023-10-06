@@ -13,6 +13,7 @@
 		B64980932AD0158F0078156C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64980912AD0158F0078156C /* Main.storyboard */; };
 		B64980952AD015910078156C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64980942AD015910078156C /* Assets.xcassets */; };
 		B64980982AD015910078156C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64980962AD015910078156C /* LaunchScreen.storyboard */; };
+		B64980A12AD0168E0078156C /* fr.maiano.SDKQuestions in Frameworks */ = {isa = PBXBuildFile; productRef = B64980A02AD0168E0078156C /* fr.maiano.SDKQuestions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64980A12AD0168E0078156C /* fr.maiano.SDKQuestions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Questions;
+			packageProductDependencies = (
+				B64980A02AD0168E0078156C /* fr.maiano.SDKQuestions */,
+			);
 			productName = Questions;
 			productReference = B64980882AD0158E0078156C /* Questions.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B649807F2AD0158E0078156C;
+			packageReferences = (
+				B649809F2AD0168E0078156C /* XCRemoteSwiftPackageReference "sdk-questions" */,
+			);
 			productRefGroup = B64980892AD0158E0078156C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B649809F2AD0168E0078156C /* XCRemoteSwiftPackageReference "sdk-questions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/guillaumemaiano/sdk-questions.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B64980A02AD0168E0078156C /* fr.maiano.SDKQuestions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B649809F2AD0168E0078156C /* XCRemoteSwiftPackageReference "sdk-questions" */;
+			productName = fr.maiano.SDKQuestions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B64980802AD0158E0078156C /* Project object */;
 }

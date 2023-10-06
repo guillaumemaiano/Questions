@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sdk-questions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/guillaumemaiano/sdk-questions.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1371b172d0824e2926449e3358652eba82bdad2e"
+      }
+    }
+  ],
+  "version" : 2
+}
